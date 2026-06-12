@@ -47,3 +47,10 @@ Todos los componentes deben compartir:
 - el mismo estilo de JSX
 - limites razonables de longitud de linea
 - reglas claras y reproducibles para futuras contribuciones
+
+
+1. Instalar dependencias:
+```bash
+npm install -D eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
+```
+
