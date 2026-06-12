@@ -53,4 +53,29 @@ Todos los componentes deben compartir:
 ```bash
 npm install -D eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
 ```
-
+2. Crear el archivo con las instrucciones `.eslintrc.json`:
+```json
+{
+  "extends": [
+    "airbnb",
+    "airbnb/hooks"
+  ],
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "max-len": ["error", { "code": 100, "ignoreUrls": true }],
+    "no-trailing-spaces": "error",
+    "object-curly-spacing": ["error", "always"],
+    "import/order": ["error", { "newlines-between": "always", "alphabetize": { "order": "asc", "caseInsensitive": true } }],
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-indent-props": ["error", 2]
+  }
+}
+```
